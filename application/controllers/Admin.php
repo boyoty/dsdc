@@ -49,8 +49,8 @@ class Admin extends CI_Controller
             ->display_as('position_name', 'ชื่อตำแหน่ง')
             ->display_as('position_type', 'ประเภทตำแหน่ง');
 
-        $crud->fields('position_code', 'position_name');
-        $crud->required_fields('position_code', 'position_name');
+        $crud->fields('position_name');
+        $crud->required_fields('position_name');
 
         $output = $crud->render();
 
